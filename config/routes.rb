@@ -1,4 +1,12 @@
 Fabes::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/who_we_are"
+
+  get "static_pages/what_we_do"
+
+  get "static_pages/contact_us"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

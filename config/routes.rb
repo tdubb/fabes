@@ -6,7 +6,11 @@ Fabes::Application.routes.draw do
 
   match '/what_we_do', to: 'static_pages#what_we_do'
 
-  match '/contact_us', to: 'static_pages#contact_us'
+  match '/contact_us', to: 'static_pages#inquiries/new'
+
+  resources :inquiries, :only => [:new, :create] do 
+    get 'thank_you', :on => :collection
+  end  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

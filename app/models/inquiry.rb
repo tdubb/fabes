@@ -4,7 +4,7 @@ class Inquiry
   include ActiveModel::Validations
   include ActionView::Helpers::TextHelper
 
-  attr_accessor :name, :email, :message
+  attr_accessor :name, :email, :message, :nickname
   
   validates :name,
             :presence => true
@@ -15,6 +15,9 @@ class Inquiry
   validates :message,
             :length => { :minimum => 10, :maximum => 1000 }
 
+  validates :nickname,
+            :format => { :with => /^$/ }
+
   def initialize(attributes = {})
     attributes.each do |name, value|
       send("#{name}=", value)
@@ -22,7 +25,14 @@ class Inquiry
   end
   
   def deliver
-    true
+    return false unless valid?
+    Pony.mail({
+      :from => %("#{name}" <#{email}>),
+      :reply_to => email,
+      :subject => "Website inquiry",
+      :body => message,
+      :html_body => simple_format(message)
+    })    
   end
       
   def persisted?

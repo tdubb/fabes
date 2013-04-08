@@ -7,7 +7,12 @@
         <li><%= msg %></li>
       <% end %>
     </ul>
-    <% end %>
+  <% end %>
+
+  <div style="display:none;">
+    <%= f.label :nickname %><br/>
+    <%= f.text_field :nickname %>
+  </div>  
         
   <div>
   	<%= f.label :name %><br/>

@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def contact_us
   end
+    
+  def current_status
+  end
 end

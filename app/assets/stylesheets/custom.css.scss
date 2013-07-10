@@ -7,11 +7,21 @@ html {
 }
 
 body {
-  padding-top: 60px;
+padding-top: 60px;
+
+}
+
+body {  
+  background:url('CSTR Tanks copy.png');
+  background-repeat:no-repeat;
+  background-size:100%;
+  backgroung-position: center;
+  
 }
 
 section {
   overflow: auto;
+
 }
 
 textarea {
@@ -25,6 +35,8 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
+
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -145,3 +157,4 @@ p {
   color: #fff;
   text-decoration: none;
 }
+

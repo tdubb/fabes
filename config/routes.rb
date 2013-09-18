@@ -9,6 +9,8 @@ Fabes::Application.routes.draw do
   match '/contact_us', to: 'static_pages#inquiries/new'
 
   match '/current_status', to: 'static_pages#current_status'
+
+  match '/news', to: 'static_pages#news'
     
   resources :inquiries, :only => [:new, :create] do 
     get 'thank_you', :on => :collection

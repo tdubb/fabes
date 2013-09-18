@@ -13,4 +13,7 @@ class StaticPagesController < ApplicationController
     
   def current_status
   end
+
+  def news
+  end
 end

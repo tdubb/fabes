@@ -1,0 +1,17 @@
+<% provide(:title, 'ABES: Power Point') %>
+
+<%=image_tag "ABES Short 1.png", :alt => "slide" %>
+<%=image_tag "ABES Short 2.png", :alt => "slide" %>
+<%=image_tag "ABES Short 3.png", :alt => "slide" %>
+<%=image_tag "ABES Short 4.png", :alt => "slide" %>
+<%=image_tag "ABES Short 5.png", :alt => "slide" %>
+<%=image_tag "ABES Short 6.png", :alt => "slide" %>
+<%=image_tag "ABES Short 7.png", :alt => "slide" %>
+<%=image_tag "ABES Short 8.png", :alt => "slide" %>
+<%=image_tag "ABES Short 9.png", :alt => "slide" %>
+<%=image_tag "ABES Short 10.png", :alt => "slide" %>
+<%=image_tag "ABES Short 11.png", :alt => "slide" %>
+<%=image_tag "ABES Short 12.png", :alt => "slide" %>
+<%=image_tag "ABES Short 13.png", :alt => "slide" %>
+<%=image_tag "ABES Short 14.png", :alt => "slide" %>
+<%=image_tag "ABES Short 15.png", :alt => "slide" %>

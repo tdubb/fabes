@@ -7,13 +7,17 @@ class StaticPagesController < ApplicationController
 
   def what_we_do
   end
-
-  def contact_us
-  end
     
   def current_status
   end
 
   def news
   end
+
+  def powerpoint
+  end
+
+  def contact_us
+  end
+
 end

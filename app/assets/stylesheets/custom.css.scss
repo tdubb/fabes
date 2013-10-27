@@ -25,8 +25,14 @@ body {
   background-repeat:no-repeat;
   background-size:cover;
   backgroung-position: center;
-  background-attachment:fixed;
+  background-attachment:fixed; 
 
+
+}
+
+#three {
+  font-size:0.75em;
+  font-weight:normal;
 }
 
 iframe { 
@@ -59,7 +65,7 @@ a:link {
 
 a:visited {
   text-decoration: underline;
-  color: #707070;
+  color: black;
 }
 
 a:hover { 
